@@ -19,6 +19,7 @@ This document only consider phrase one.
 # Type
 
 - type VotingPower = FixedU128
+- type 
 
 # Trait
 
@@ -34,6 +35,9 @@ This document only consider phrase one.
 
 # Dispatchables
 
+- feed_value(origin, proof: Vec<u8>) -> DispatchResult
+- set_validator(origin, proof: Vec<u8>) -> DispatchResult
+
 # Methods
 
-- 
+- get(key: &CurrencyId) -> Option<Price>
