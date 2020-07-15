@@ -1,5 +1,7 @@
 # Overview
 
+We introduce the band price oracle module which will be the center of the price information. Other modules can connect with this module to get the price information from this module which help improving the defi ecosystem. Another benefit is that the system does not have to contruct the incenticve structure to create the decentralized oracle network which causes complications. In order to update the values in the band price oracle storage, users simply send the proof from Bandchain into the module.
+
 A price oracle module have three main functionalities
   1. Store price to the state
   2. Expose a function that allows other modules to read values from the store
