@@ -64,4 +64,4 @@ This document only consider phrase one.
 
 # Methods
 
-- get(key: &CurrencyId) -> Option<<Price>>
+- get(key: &CurrencyId) -> Option\<Price\>
