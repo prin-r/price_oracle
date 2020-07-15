@@ -55,7 +55,7 @@ This document only consider phrase one.
 
 - Validators: map AccountId => Option<VotingPower>
 - TotalVotingPower: VotingPower
-- Values: map hasher(twox_64_concat) CurrencyId => Option<Price>
+- Values: map hasher(twox_64_concat) CurrencyId => Option<Res>
 
 # Dispatchables
 
