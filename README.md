@@ -16,9 +16,9 @@ This document only consider phrase one.
 - orml_traits
   - DataProvider
 - proof_verification
-  // TODO: this crate is not avaliable, so we will create one
+  - // TODO: this crate is not avaliable, so we will create one
 - obi
-  // TODO: make this crate support non-std
+  - // TODO: make this crate support non-std
 
 # Type
 
