@@ -28,39 +28,39 @@ This document only consider phrase one.
   - oracle_script_id: u64
   - multiplier: u64
 - type struct Req
-	- client_id: Vec<u8>
+	- client_id: Vec\<u8\>
 	- oracle_script_id: u64
-	- calldata: Vec<u8>
+	- calldata: Vec\<u8\>
 	- ask_count: u64
 	- min_count: u64
 - type struct Res
-	- client_id: Vec<u8>
+	- client_id: Vec\<u8\>
 	- request_id: u64
 	- ans_count: u64
 	- request_time: u64
 	- resolve_time: u64
 	- resolve_status: u8
-	- result: Vec<u8>
+	- result: Vec\<u8\>
 - type struct BandPacket
 	- req: Req
 	- res: Res
 
 # Trait
 
-- type Event: From<Event> + Into<<Self as system::Trait>::Event>
+- type Event: From<Event> + Into\<\<Self as system::Trait\>::Event\>
 -	type OracleKey = CurrencyId;
 -	type OracleValue = Price;
 
 # Storages
 
-- Validators: map AccountId => Option<<VotingPower>>
+- Validators: map AccountId => Option\<VotingPower\>
 - TotalVotingPower: VotingPower
-- Values: map hasher(twox_64_concat) CurrencyId => Option<<Res>>
+- Values: map hasher(twox_64_concat) CurrencyId => Option\<Res\>
 
 # Dispatchables
 
-- feed_value(origin, proof: Vec<<u8>>) -> DispatchResult
-- set_validator(origin, proof: Vec<<u8>>) -> DispatchResult
+- feed_value(origin, proof: Vec\<u8\>) -> DispatchResult
+- set_validator(origin, proof: Vec\<u8\>) -> DispatchResult
 
 # Methods
 
