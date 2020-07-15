@@ -18,13 +18,22 @@ This document only consider phrase one.
 
 # Type
 
-- trait DataProviderRegistry<Key, Value>
-  - get(data_provider_id: &str, key: &Key) -> Option<Value>
+- type VotingPower = FixedU128
 
 # Trait
 
-...
+- type Event: From<Event> + Into<<Self as system::Trait>::Event>
+-	type OracleKey = CurrencyId;
+-	type OracleValue = Price;
+
+# Storages
+
+- Validators: map AccountId => Option<VotingPower>
+- TotalVotingPower: VotingPower
+- Values: map hasher(twox_64_concat) CurrencyId => Option<Price>
+
+# Dispatchables
 
 # Methods
 
-...
+- 
