@@ -53,15 +53,15 @@ This document only consider phrase one.
 
 # Storages
 
-- Validators: map AccountId => Option<VotingPower>
+- Validators: map AccountId => Option<<VotingPower>>
 - TotalVotingPower: VotingPower
-- Values: map hasher(twox_64_concat) CurrencyId => Option<Res>
+- Values: map hasher(twox_64_concat) CurrencyId => Option<<Res>>
 
 # Dispatchables
 
-- feed_value(origin, proof: Vec<u8>) -> DispatchResult
-- set_validator(origin, proof: Vec<u8>) -> DispatchResult
+- feed_value(origin, proof: Vec<<u8>>) -> DispatchResult
+- set_validator(origin, proof: Vec<<u8>>) -> DispatchResult
 
 # Methods
 
-- get(key: &CurrencyId) -> Option<Price>
+- get(key: &CurrencyId) -> Option<<Price>>
